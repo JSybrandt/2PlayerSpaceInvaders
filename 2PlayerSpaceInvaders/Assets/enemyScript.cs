@@ -5,16 +5,27 @@ public class enemyScript : MonoBehaviour {
 
 	public Sprite bolt;
 	public GameObject bullet;
-	public
+	public GameObject player1;
+	public GameObject player2;
+	public GameObject p1score;
+	public int p2score;
+	void Start(){
+		 GameObject.FindGameObjectWithTag ("player1");
+		 GameObject.FindGameObjectWithTag ("player2");
+
+	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "PlayerBolt1") {
 			gameObject.SetActive (false);
 			other.gameObject.SetActive (false);
+			player1.GetComponent<player>().score += 100;
+
+
 		} else if (other.gameObject.tag == "PlayerBolt2") {
 			gameObject.SetActive (false);
 			other.gameObject.SetActive (false);
-
+			player2.GetComponent<player>().score += 100;
 		}
 
 

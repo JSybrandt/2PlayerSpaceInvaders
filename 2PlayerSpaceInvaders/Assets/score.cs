@@ -1,16 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class score : MonoBehaviour {
-	public GameObject player
+	public GameObject obj;
 
-	// Use this for initialization
-	void Start () {
-	
+	public Text myText;
+	 
+
+	void Start(){
+
+		myText = GetComponent<Text> ();
 	}
+	void Update(){
+		myText.text = obj.GetComponent<player> ().score.ToString();
 	
-	// Update is called once per frame
-	void Update () {
-	
+
 	}
+
 }

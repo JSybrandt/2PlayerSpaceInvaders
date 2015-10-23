@@ -3,18 +3,20 @@ using System.Collections;
 
 public class player : MonoBehaviour {
 	
-	
+	public AudioSource shoot;
 	public int score = 0;
 	public int speed = 5;
 	public GameObject bullet;
 	public Sprite bolt;
 	public string inputmov = "Horizontal";
 	public string boltType = "PlayerBolt1";
+	public string fire = "Fire1";
 	
 	
 	// Use this for initialization
 	void Start () {
-		
+		 shoot = GetComponent<AudioSource> ();
+			
 	}
 	
 	// Update is called once per frame
@@ -30,17 +32,18 @@ public class player : MonoBehaviour {
 
 		
 		
-		if (Input.GetButtonDown ("Fire1")) {
+		if (Input.GetButtonDown (fire)) {
 			GameObject g = (GameObject) Instantiate(bullet,this.transform.position,Quaternion.identity);
 			g.GetComponent<Rigidbody2D>().velocity = Vector3.up*3;
 			g.GetComponent<SpriteRenderer>().sprite=bolt;
 			g.tag=boltType;
+			shoot.Play();
 		}
 		
 	}
 	void OnTriggerEnter2D (Collider2D hit) {
-		if (hit.gameObject.tag == "") {
-			GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
+		if (hit.gameObject.tag == "EnemyBolt") {
+			gameObject.SetActive(false);
 		}
 	}
 }
