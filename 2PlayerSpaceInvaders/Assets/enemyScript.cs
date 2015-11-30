@@ -10,8 +10,9 @@ public class enemyScript : MonoBehaviour {
 	public GameObject p1score;
 	public int p2score;
 	void Start(){
-		 player1 = GameObject.FindGameObjectWithTag ("player1");
-		 player2 = GameObject.FindGameObjectWithTag ("player2");
+		 GameObject.FindGameObjectWithTag ("player1");
+		 GameObject.FindGameObjectWithTag ("player2");
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

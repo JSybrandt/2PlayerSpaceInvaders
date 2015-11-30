@@ -8,7 +8,7 @@ public class player : MonoBehaviour {
 	public int speed = 5;
 	public GameObject bullet;
 	public Sprite bolt;
-	public string inputmov = "Horizontal1";
+	public string inputmov = "Horizontal";
 	public string boltType = "PlayerBolt1";
 	public string fire = "Fire1";
 	
@@ -27,6 +27,9 @@ public class player : MonoBehaviour {
 			float ha = Input.GetAxis (inputmov) * speed;
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (ha, 0);
 			//transform.position = new Vector3(transform.position.x + ha *speed *Time.deltaTime,transform.position.y,transform.position.z);
+		
+		
+
 		
 		
 		if (Input.GetButtonDown (fire)) {
