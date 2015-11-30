@@ -34,6 +34,7 @@ public class enemyScript : MonoBehaviour {
 
 	}
 	public void act(){
+		if(Network.connections.Length==0)return;
 		if (Random.Range (0.0f, 1.0f) >= 0.97) {
 			GameObject g = (GameObject) Instantiate(bullet,this.transform.position,Quaternion.identity);
 			g.GetComponent<Rigidbody2D>().velocity = Vector3.down*3;

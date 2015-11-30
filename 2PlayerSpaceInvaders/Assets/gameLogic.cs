@@ -15,6 +15,7 @@ public class gameLogic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Network.connections.Length==0)return;
 		if (!player1.activeSelf && !player2.activeSelf) {
 			endCan.SetActive(true);
 			Time.timeScale = 0;

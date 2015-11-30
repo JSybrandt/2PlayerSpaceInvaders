@@ -21,7 +21,7 @@ public class player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(Network.connections.Length==0)return;
 		
 		//if (Input.GetButtonDown ("Horizontal") ) {
 			float ha = Input.GetAxis (inputmov) * speed;
@@ -33,7 +33,7 @@ public class player : MonoBehaviour {
 		
 		
 		if (Input.GetButtonDown (fire)) {
-			GameObject g = (GameObject) Instantiate(bullet,this.transform.position,Quaternion.identity);
+			GameObject g = (GameObject) Network.Instantiate(bullet,this.transform.position,Quaternion.identity,0);
 			g.GetComponent<Rigidbody2D>().velocity = Vector3.up*3;
 			g.GetComponent<SpriteRenderer>().sprite=bolt;
 			g.tag=boltType;

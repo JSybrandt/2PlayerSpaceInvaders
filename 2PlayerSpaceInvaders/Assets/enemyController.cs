@@ -26,9 +26,12 @@ public class enemyController : MonoBehaviour {
 	bool movingLeft = false;
 	bool moveDownNext = false;
 
+	bool isStarted = false;
+
 	// Use this for initialization
-	public void pleasework() {
-	
+	public bool LoadEnemys() {
+		//if(Network.connections.Length==0)return false;
+		isStarted = true;
 		lBound = GameObject.Find ("LWall").transform.position.x;
 		rBound = GameObject.Find ("RWall").transform.position.x;
 
@@ -36,7 +39,8 @@ public class enemyController : MonoBehaviour {
 		
 			for(float j = -4; j < 3; j+=1.0f){
 			
-				GameObject e = (GameObject) Instantiate(enemyPrefab, new Vector3(j,i,0), Quaternion.identity);
+				GameObject e = (GameObject) Network.Instantiate(enemyPrefab, new Vector3(j,i,0), Quaternion.identity,0);
+				if(e!=null)
 				enemies.Add(e);
 				if(enemies.Count>14){
 					if(enemies.Count>28){
@@ -50,10 +54,12 @@ public class enemyController : MonoBehaviour {
 		}
 
 		currentCount = startingCount = enemies.Count;
-
+		return true;
 	}
 
 	void FixedUpdate(){
+		if (!isStarted)
+			return;
 		timer += Time.deltaTime;
 		timer2 += Time.deltaTime;
 
@@ -107,7 +113,8 @@ public class enemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (!isStarted)return;
+		if(Network.connections.Length==0)return;
 		currentCount = 0;
 		foreach (GameObject g in enemies) {
 			if(g.activeSelf) currentCount++;

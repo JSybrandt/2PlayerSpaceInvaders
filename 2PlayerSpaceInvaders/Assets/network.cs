@@ -16,7 +16,7 @@ public class network : MonoBehaviour
     public string AWS_URL;
     public GameObject cameraClient;
 
-
+	bool calledLoad=false;
 
     // Use this for initialization
     void Start()
@@ -120,56 +120,49 @@ public class network : MonoBehaviour
             customButtonStyle = new GUIStyle(GUI.skin.button);
             customButtonStyle.fontSize = (int)((float)(Screen.width) * 0.0125f);
         }
-        if (!Network.isClient && !Network.isServer)
-        {
-            GUILayout.BeginArea(new Rect(Screen.width * .05f, Screen.height * .05f, Screen.width * 0.1f, Screen.height * 1f));
-            if (GUILayout.Button("Start Server", customButtonStyle))
-            {
-                Debug.Log("Starting Server");
-                startServer();
-            }
+        if (!Network.isClient && !Network.isServer) {
+			GUILayout.BeginArea (new Rect (Screen.width * .05f, Screen.height * .05f, Screen.width * 0.1f, Screen.height * 1f));
+			if (GUILayout.Button ("Start Server", customButtonStyle)) {
+				Debug.Log ("Starting Server");
+				startServer ();
+			}
 
-            if (GUILayout.Button("Back", customButtonStyle))
-            {
-                Debug.Log("Back to menu");
-                back();
-            }
+			if (GUILayout.Button ("Back", customButtonStyle)) {
+				Debug.Log ("Back to menu");
+				back ();
+			}
 
-            if (GUILayout.Button("Refresh Host List", customButtonStyle))
-            {
-                Debug.Log("Refreshing...");
-                refreshHostList();
-            }
+			if (GUILayout.Button ("Refresh Host List", customButtonStyle)) {
+				Debug.Log ("Refreshing...");
+				refreshHostList ();
+			}
 
-            if (hostDataFound)
-            {
-                Debug.Log("Host data recieved");
-                for (int i = 0; i < hostData.Length; i++)
-                {
+			if (hostDataFound) {
+				Debug.Log ("Host data recieved");
+				for (int i = 0; i < hostData.Length; i++) {
 
-                    if (GUILayout.Button(hostData[i].gameName, customButtonStyle))
-                    {
-                        Network.Connect(hostData[i]);
-                        GameObject.Find("Main Camera").GetComponent<enemyController>().pleasework();
-                    }
-                }
-            }
-            GUILayout.EndArea();
-        }
-        else if (Network.isServer && !gameStarted)
-        {
-            customMessageStyle = new GUIStyle(GUI.skin.label);
-            customMessageStyle.fontSize = (int)((float)(Screen.width) * 0.0125f);
+					if (GUILayout.Button (hostData [i].gameName, customButtonStyle)) {
+						Network.Connect (hostData [i]);
 
-            GUILayout.BeginArea(new Rect(Screen.width * .05f, Screen.height * .05f, Screen.width * 0.1f, Screen.height * 1f));
-            GUILayout.Label("Waiting for player to join...", customMessageStyle);
-            if (GUILayout.Button("Quit Hosting", customButtonStyle))
-            {
-                Debug.Log("Exiting Server");
-                exitServer();
-            }
-            GUILayout.EndArea();
-        }
+					}
+				}
+			}
+			GUILayout.EndArea ();
+		} else if (Network.isServer && !gameStarted) {
+
+			customMessageStyle = new GUIStyle (GUI.skin.label);
+			customMessageStyle.fontSize = (int)((float)(Screen.width) * 0.0125f);
+
+			GUILayout.BeginArea (new Rect (Screen.width * .05f, Screen.height * .05f, Screen.width * 0.1f, Screen.height * 1f));
+			GUILayout.Label ("Waiting for player to join...", customMessageStyle);
+			if (GUILayout.Button ("Quit Hosting", customButtonStyle)) {
+				Debug.Log ("Exiting Server");
+				exitServer ();
+			}
+			GUILayout.EndArea ();
+		} else if (Network.isServer && gameStarted && !calledLoad){
+				calledLoad = GameObject.Find("Main Camera").GetComponent<enemyController>().LoadEnemys();
+		}
     }
 
     void Update()
