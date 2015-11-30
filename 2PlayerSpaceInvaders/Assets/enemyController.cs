@@ -27,7 +27,7 @@ public class enemyController : MonoBehaviour {
 	bool moveDownNext = false;
 
 	// Use this for initialization
-	void Start () {
+	public void pleasework() {
 	
 		lBound = GameObject.Find ("LWall").transform.position.x;
 		rBound = GameObject.Find ("RWall").transform.position.x;
