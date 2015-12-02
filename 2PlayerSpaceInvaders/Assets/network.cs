@@ -18,6 +18,7 @@ public class network : MonoBehaviour
     public string AWS_URL;
     public GameObject cameraClient;
 
+	bool connected = false; 
 	bool calledLoad=false;
 
     // Use this for initialization
@@ -78,6 +79,8 @@ public class network : MonoBehaviour
         gameStarted = true;
 
         spawnPlayer();
+
+		GameObject.Find ("Main Camera").GetComponent<enemyController> ().LoadEnemys ();
     }
 
     //Messages
@@ -91,6 +94,7 @@ public class network : MonoBehaviour
     {
         Debug.Log("Connected to server");
         spawnPlayer();
+		gameStarted = true;
     }
 
     void OnPlayerDisconnected()
@@ -117,6 +121,8 @@ public class network : MonoBehaviour
     //Update functions for GUI and Per-frame update
     void OnGUI()
     {
+		if (gameStarted)
+			return;
         if (customButtonStyle == null)
         {
             customButtonStyle = new GUIStyle(GUI.skin.button);

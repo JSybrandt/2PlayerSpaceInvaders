@@ -2,9 +2,9 @@ Mono path[0] = 'C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/BUILD_Data
 Mono path[1] = 'C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/BUILD_Data/Mono'
 Mono config path = 'C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/BUILD_Data/Mono/etc'
 PlayerConnection initialized from C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/BUILD_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55214
-Multi-casting "[IP] 192.168.56.1 [Port] 55214 [Flags] 2 [Guid] 2285702557 [EditorId] 1092789625 [Version] 1048832 [Id] WindowsPlayer(2CE2211R2G) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.56.1:55214]
+PlayerConnection initialized network socket : 0.0.0.0 55213
+Multi-casting "[IP] 192.168.56.1 [Port] 55213 [Flags] 2 [Guid] 3486834768 [EditorId] 3579187397 [Version] 1048832 [Id] WindowsPlayer(2CE2211R2G) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.56.1:55213]
 Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -29,1087 +29,165 @@ desktop: 1280x800 40Hz; virtual: 1280x800 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\BUILD_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 25a8 -> priority: 1 
-Refreshing...
+  Thread -> id: 289c -> priority: 1 
+Starting Server
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:138)
+network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:134)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 138)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 134)
 
-Getting Host List
+Server initialized
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:refreshHostList() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:68)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:139)
+network:OnServerInitialized() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:89)
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+network:startServer() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:45)
+network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:135)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 68)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 89)
 
-Host data recieved
+Server registered
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+network:OnMasterServerEvent(MasterServerEvent) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:117)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 117)
 
-Host data recieved
+Load Enemeys CAlled
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyController:LoadEnemys() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyController.cs:33)
+network:OnPlayerConnected(NetworkPlayer) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:83)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyController.cs Line: 33)
 
-Host data recieved
+LoadEnemys Enemeys Running
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyController:LoadEnemys() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyController.cs:36)
+network:OnPlayerConnected(NetworkPlayer) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:83)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyController.cs Line: 36)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
-Host data recieved
+deleting bolt
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:20)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 20)
 
-Host data recieved
+deleting enemy
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
+enemyScript:OnTriggerEnter2D(Collider2D) (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\enemyScript.cs:22)
  
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
-
-Connected to server
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnConnectedToServer() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:92)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 92)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-View ID AllocatedID: 25 not found during lookup. Strange behaviour may occur
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 1697)
-
-Received state update for view id' AllocatedID: 25' but the NetworkView doesn't exist
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 2491)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:Update() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:199)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 199)
-
-Received pong from 192.168.56.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-Failed to connect. This is caused by an incorrect parameters, internal error or too many existing connections.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 343)
-
-Received pong from 10.24.110.1:25001
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 852)
-
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Network/NetworkManager.cpp Line: 761)
+(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/enemyScript.cs Line: 22)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+UnloadTime: 2.860883 ms
+System memory in use before: 18.3 MB.
+System memory in use after: 18.3 MB.
 
-Host data recieved
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-network:OnGUI() (at C:\Projects\2PlayerSpaceInvaders\2PlayerSpaceInvaders\Assets\network.cs:143)
- 
-(Filename: C:/Projects/2PlayerSpaceInvaders/2PlayerSpaceInvaders/Assets/network.cs Line: 143)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 256.
+Total: 0.900967 ms (FindLiveObjects: 0.119127 ms CreateObjectMapping: 0.043618 ms MarkObjects: 0.707431 ms  DeleteObjects: 0.024558 ms)
 
-UnloadTime: 3.054419 ms
-System memory in use before: 18.4 MB.
-System memory in use after: 18.4 MB.
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.586471 ms (FindLiveObjects: 0.059380 ms CreateObjectMapping: 0.029690 ms MarkObjects: 0.481640 ms  DeleteObjects: 0.013562 ms)
-
+UnloadTime: 0.405032 ms

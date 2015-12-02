@@ -30,8 +30,10 @@ public class enemyController : MonoBehaviour {
 
 	// Use this for initialization
 	public bool LoadEnemys() {
+		Debug.Log ("Load Enemeys CAlled");
 		if (!Network.isServer)
 			return false;
+		Debug.Log("LoadEnemys Enemeys Running");
 		//if(Network.connections.Length==0)return false;
 		isStarted = true;
 		lBound = GameObject.Find ("LWall").transform.position.x;
