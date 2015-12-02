@@ -13,7 +13,7 @@ public class score : MonoBehaviour {
 		myText = GetComponent<Text> ();
 	}
 	void Update(){
-		myText.text = obj.GetComponent<player> ().score.ToString();
+		//myText.text = obj.GetComponent<player> ().score.ToString();
 	
 
 	}

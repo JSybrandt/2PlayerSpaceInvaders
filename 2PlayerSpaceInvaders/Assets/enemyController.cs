@@ -30,6 +30,8 @@ public class enemyController : MonoBehaviour {
 
 	// Use this for initialization
 	public bool LoadEnemys() {
+		if (!Network.isServer)
+			return false;
 		//if(Network.connections.Length==0)return false;
 		isStarted = true;
 		lBound = GameObject.Find ("LWall").transform.position.x;
@@ -42,13 +44,13 @@ public class enemyController : MonoBehaviour {
 				GameObject e = (GameObject) Network.Instantiate(enemyPrefab, new Vector3(j,i,0), Quaternion.identity,0);
 				if(e!=null)
 				enemies.Add(e);
-				if(enemies.Count>14){
-					if(enemies.Count>28){
-						e.GetComponent<SpriteRenderer>().sprite = e2;
-					}else{
-						e.GetComponent<SpriteRenderer>().sprite = e3;
-					}
-				}
+				//if(enemies.Count>14){
+				//	if(enemies.Count>28){
+				//		e.GetComponent<SpriteRenderer>().sprite = e2;
+				//	}else{
+				//		e.GetComponent<SpriteRenderer>().sprite = e3;
+				//	}
+				//}
 			}
 
 		}
@@ -58,6 +60,8 @@ public class enemyController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
+		if (!Network.isServer)
+			return;
 		if (!isStarted)
 			return;
 		timer += Time.deltaTime;
@@ -109,42 +113,6 @@ public class enemyController : MonoBehaviour {
 				}
 			}
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (!isStarted)return;
-		if(Network.connections.Length==0)return;
-		currentCount = 0;
-		foreach (GameObject g in enemies) {
-			if(g.activeSelf) currentCount++;
-		}
-
-		if (currentCount == 0) {
-			enemies.Clear();
-			for (float i = 3; i < 6; i+=0.5f) {
-				
-				for(float j = -4; j < 3; j+=1.0f){
-					
-					GameObject e = (GameObject) Instantiate(enemyPrefab, new Vector3(j,i,0), Quaternion.identity);
-					enemies.Add(e);
-					if(enemies.Count>14){
-						if(enemies.Count>28){
-							e.GetComponent<SpriteRenderer>().sprite = e2;
-						}else{
-							e.GetComponent<SpriteRenderer>().sprite = e3;
-						}
-					}
-				}
-				
-			}
-			
-			currentCount = startingCount = enemies.Count;
-
-
-
-		}
-
 	}
 
 	float linearInterOnEnemy(float min, float max){

@@ -8,6 +8,8 @@ public class network : MonoBehaviour
     private bool hostDataFound = false;
     private HostData[] hostData;
 
+	public GameObject PLAYER;
+
     private bool puckInstantiated = false;
     private bool gameStarted;
     GUIStyle customButtonStyle;
@@ -69,7 +71,7 @@ public class network : MonoBehaviour
     //Create a player that can be controlled by the user
     void spawnPlayer()
     {
-
+		Network.Instantiate (PLAYER, new Vector3 (0, 1, 0), Quaternion.identity, 0);
     }
     void OnPlayerConnected(NetworkPlayer player)
     {

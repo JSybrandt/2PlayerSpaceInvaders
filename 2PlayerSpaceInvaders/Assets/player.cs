@@ -11,18 +11,19 @@ public class player : MonoBehaviour {
 	public string inputmov = "Horizontal";
 	public string boltType = "PlayerBolt1";
 	public string fire = "Fire1";
-	
+	private NetworkView netView;
 	
 	// Use this for initialization
 	void Start () {
 		 shoot = GetComponent<AudioSource> ();
-			
+		netView = GetComponent<NetworkView> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Network.connections.Length==0)return;
-		
+		if (!netView.isMine)
+			return;
 		//if (Input.GetButtonDown ("Horizontal") ) {
 			float ha = Input.GetAxis (inputmov) * speed;
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (ha, 0);
@@ -41,8 +42,15 @@ public class player : MonoBehaviour {
 		}
 		
 	}
+
+	[RPC]
+	void deactivate(){
+		gameObject.SetActive(false);
+	}
+
 	void OnTriggerEnter2D (Collider2D hit) {
 		if (hit.gameObject.tag == "EnemyBolt") {
+			netView.RPC("deactivate",RPCMode.AllBuffered,null);
 			gameObject.SetActive(false);
 		}
 	}
